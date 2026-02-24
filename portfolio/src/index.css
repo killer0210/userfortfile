@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+    /* Branding Colors */
+    --color-branding-orange: #E85002;
+
+    /* Branding Gradient Colors */
+    --color-gradient-1: #000000;
+    --color-gradient-2: #c10801;
+    --color-gradient-3: #f16001;
+    --color-gradient-4: #D9c33a;
+
+    /* Primary Colors */
+    --color-primary: #000000;
+
+    /* Gray Scale */
+    --color-light-gray: #a7a7a7;
+    --color-white: #f9f9f9;
+    --color-gray: #646464;
+    --color-dark-gray: #333333;
+}
+
+:root {
+    /* Branding Colors */
+    --branding-orange: #E85002;
+
+    /* Branding Gradient Colors */
+    --gradient-color-1: #000000;
+    --gradient-color-2: #c10801;
+    --gradient-color-3: #f16001;
+    --gradient-color-4: #D9c33a;
+
+    /* Primary Colors */
+    --primary: #000000;
+
+    /* Gray Scale */
+    --light-gray: #a7a7a7;
+    --white: #f9f9f9;
+    --gray: #646464;
+    --dark-gray: #333333;
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+}
+
+.light-gray {
+    background-color: var(--color-light-gray);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.gradient-1 {
+    background: linear-gradient(to right,
+            var(--gradient-color-1),
+            var(--gradient-color-2),
+            var(--gradient-color-3),
+            var(--gradient-color-4));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

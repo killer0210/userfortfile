@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/95f9420741.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --bg-main: #f8f8f8;
+            --bg-dark: #111111;
+            --text-main: #1a1a1a;
+            --text-soft: #6b6b6b;
+            --border-soft: #e5e5e5;
+            --color-white: #ffffff;
+            --color-black: #000000;
+            /* Corner decoration – нэг газар өөрчлөхөд бүх буланд нөлөөлнө */
+            --corner-size: 2.5rem;
+            --corner-gap: 0.15rem;
+            --corner-shadow: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            :root {
+                --corner-size: 4rem;
+            }
+        }
+
+        /* .concave {
+            background: black;
+
+            -webkit-mask:
+                radial-gradient(circle at bottom left, transparent 40px, black 41px),
+                radial-gradient(circle at top right, transparent 40px, black 41px);
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-position: 0 0, 0 0;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-composite: source-in;
+
+            mask:
+                radial-gradient(circle at bottom left, transparent 40px, black 41px),
+                radial-gradient(circle at top right, transparent 40px, black 41px);
+            mask-size: 100% 100%;
+            mask-position: 0 0, 0 0;
+            mask-repeat: no-repeat;
+            mask-composite: intersect;
+        } */
+
+        .title {
+            position: relative;
+        }
+
+        .title::after,
+        .title::before {
+            content: '';
+            position: absolute;
+            width: var(--corner-size);
+            height: var(--corner-size);
+            background-color: transparent;
+            border-radius: 60% 0 0 0;
+            box-shadow: calc(-1 * var(--corner-shadow)) calc(-1 * var(--corner-shadow)) var(--bg-dark);
+            backface-visibility: hidden;
+        }
+
+        .title::after {
+            bottom: calc(-1 * var(--corner-size));
+            left: calc(-1 * var(--corner-gap));
+        }
+
+        .title::before {
+            top: calc(-1 * var(--corner-gap));
+            right: calc(-1 * var(--corner-size));
+        }
+
+        .links {
+            position: relative;
+        }
+
+        .links::after,
+        .links::before {
+            content: '';
+            position: absolute;
+            width: var(--corner-size);
+            height: var(--corner-size);
+            background-color: transparent;
+            border-radius: 0 0 60% 0;
+            box-shadow: var(--corner-shadow) var(--corner-shadow) var(--bg-dark);
+            backface-visibility: hidden;
+        }
+
+        .links::after {
+            bottom: calc(-1 * var(--corner-gap));
+            left: calc(-1 * var(--corner-size));
+        }
+
+        .links::before {
+            top: calc(-1 * var(--corner-size));
+            right: calc(-1 * var(--corner-gap));
+        }
+
+        main>div {
+            background-image:
+                url('./profile-removebg-preview.png'),
+                radial-gradient(circle at 70% 50%, #ffe7c2, transparent 60%);
+            background-size: contain, cover;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-[var(--bg-dark)] w-full flex flex-row h-screen gap-4 p-8">
+        <div class="w-12 lg:w-14 xl:w-16 h-full flex flex-col gap-4">
+            <h1
+                class="text-black aspect-square text-2xl font-bold p-2 md:p-4 bg-[var(--bg-main)] rounded-full text-center items-center flex justify-center">
+                Ts.</h1>
+            <div class="bg-[var(--bg-main)] h-full rounded-full">
+                <ul class="flex flex-col items-center justify-center h-full gap-6 text-4xl">
+                    <li><a href="./index.html"><i
+                                class="fa-solid fa-house-chimney-crack transition-all duration-300 ease-in-out hover:translate-x-1 hover:opacity-60"></i>
+                        </a></li>
+                    <li><a href="./about.html"><i
+                                class="fa-regular fa-user transition-all duration-300 ease-in-out hover:translate-x-1 hover:opacity-60"></i>
+                        </a></li>
+                    <li><i
+                            class="fa-solid fa-code transition-all duration-300 ease-in-out hover:translate-x-1 hover:opacity-60"></i>
+                    </li>
+                    <li><i
+                            class="fa-regular fa-folder transition-all duration-300 ease-in-out hover:translate-x-1 hover:opacity-60"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="flex-1 h-full  relative overflow-hidden">
+            <div class="w-full h-full rounded-3xl bg-[var(--bg-main)] grid grid-cols-9 grid-rows-12 ">
+                <div
+                    class="concave title col-start-1 col-end-3 row-start-1 row-end-1 bg-[var(--bg-dark)] rounded-br-[24px] relative flex text-center items-center justify-center ">
+                    <h1 class="text-6xl font-bold text-[var(--color-white)] tracking-tight">ABOUT</h1>
+                </div>
+                <div class="col-start-1 col-end-12 row-start-2 row-end-13">
+                    <div class="space-y-16 flex flex-col items-start justify-center ">
+                        <!-- EDUCATION -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-[#1a1a1a]"> Education </h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-[#6b6b6b]">2021 — 2025</p>
+                                    <h4 class="text-lg font-medium"> Information Technology – XYZ University </h4>
+                                    <p class="text-[#6b6b6b] leading-relaxed"> Focused on web technologies, UI
+                                        systems and frontend architecture. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EXPERIENCE -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-[#1a1a1a]"> Experience </h3>
+                            <div class="space-y-8">
+                                <div>
+                                    <p class="text-sm text-[#6b6b6b]">2023 — Present</p>
+                                    <h4 class="text-lg font-medium"> Frontend Developer – Company Name </h4>
+                                    <p class="text-[#6b6b6b] leading-relaxed"> Built responsive UI systems using
+                                        React and Tailwind. Focused on performance optimization and clean design
+                                        systems. </p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-[#6b6b6b]">2022 — 2023</p>
+                                    <h4 class="text-lg font-medium"> Freelance Developer </h4>
+                                    <p class="text-[#6b6b6b] leading-relaxed"> Designed and developed landing pages
+                                        and portfolio websites for clients with a focus on minimal aesthetics. </p>
+                                </div>
+                            </div>
+                        </div> <!-- PERSONAL PHILOSOPHY -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-[#1a1a1a]"> Philosophy </h3>
+                            <p class="text-[#6b6b6b] leading-relaxed max-w-2xl"> I believe in clean systems, strong
+                                typography and intentional spacing. Good UI is not decoration — it is clarity. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
