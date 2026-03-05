@@ -12,14 +12,14 @@ const Hero = () => {
                 </div>
             </div>
             <div className="w-full flex-1 bg-black">
-                <div className="relative w-full h-full bg-white rounded-tl-[60px] rounded-br-[60px] rounded-bl-[60px] md:rounded-bl-none">
+                <div className="hero-image relative w-full h-full bg-white rounded-tl-[60px] rounded-br-[60px] rounded-bl-[60px] md:rounded-bl-none">
                     <div className="absolute bottom-0 left-0 p-8 flex flex-col gap-2 items-start justify-end md:hidden">
                         <h1 className='gradient-1 text-3xl font-bold '>Гэрэлсайхан</h1>
                         <p className='text-black text-sm font-bold'>I'm a software engineer with a passion for building web applications.</p>
                     </div>
                 </div>
             </div>
-            <div className="min-h-[250px] md:h-[350px] w-full flex flex-col md:flex-row bg-white mt-4 md:mt-0 rounded-[60px] md:rounded-none ">
+            <div className="min-h-[250px] md:h-[270px] w-full flex flex-col md:flex-row bg-white mt-4 md:mt-0 rounded-[60px] md:rounded-none ">
                 <div className="hidden md:block w-[60%] h-full bg-black ">
                     <div className="w-full h-full bg-white rounded-br-[60px] p-8 flex flex-col gap-2 items-start justify-end">
                         <h1 className='gradient-1 text-3xl font-bold '>Гэрэлсайхан</h1>
