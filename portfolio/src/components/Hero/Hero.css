@@ -1,8 +1,19 @@
+.tag-right {
+    border-bottom-right-radius: 100px;
+    corner-shape: scoop;
+}
+
+.tag-left {
+    border-bottom-right-radius: 100px;
+    corner-shape: scoop;
+}
+
+
 .hero-image {
     background-image:
         url('../../assets/hero.png'),
-        radial-gradient(circle at 70% 50%, #ffe7c2, transparent 60%);
+        radial-gradient(circle at 70% 100%, #ffe7c2, transparent 80%);
     background-size: contain, cover;
-    background-position: center, center;
+    background-position: right bottom, center;
     background-repeat: no-repeat, no-repeat;
 }

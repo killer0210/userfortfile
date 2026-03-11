@@ -1,41 +1,60 @@
 import React from 'react'
 import './Hero.css'
+
 const Hero = () => {
     return (
-        <div className='w-full h-full bg-black rounded-tr-[60px] rounded-bl-[60px] overflow-hidden flex flex-col justify-between'>
-            <div className='content flex relative w-full h-[130px] bg-white'>
-                <div className=" w-[40%] h-full bg-black rounded-br-[60px] border-white  flex items-center justify-center ">
-                    <h1 className='text-white text-2xl sm:text-4xl md:text-6xl font-bold'>HOME</h1>
-                </div>
-                <div className=" w-[60%] h-full bg-black ">
-                    <div className=' rounded-tl-[60px] w-full h-full bg-white'></div>
-                </div>
+        <div className="hero w-full h-full bg-white rounded-tr-[60px] rounded-bl-[60px] overflow-hidden relative">
+            <div className='px-24 py-12 bg-black inline-flex rounded-br-[60px] relative z-1'>
+                <h1 className='text-5xl font-bold text-white'>Hello, I'm</h1>
+                <div className='tag-right h-[70px] w-[70px]  bg-black z-10 absolute bottom-[-70px] left-0' />
+                <div className='tag-left h-[70px] w-[70px]  bg-black z-10 absolute top-0 right-[-70px]' />
             </div>
-            <div className="w-full flex-1 bg-black">
-                <div className="hero-image relative w-full h-full bg-white rounded-tl-[60px] rounded-br-[60px] rounded-bl-[60px] md:rounded-bl-none">
-                    <div className="absolute bottom-0 left-0 p-8 flex flex-col gap-2 items-start justify-end md:hidden">
-                        <h1 className='gradient-1 text-3xl font-bold '>Гэрэлсайхан</h1>
-                        <p className='text-black text-sm font-bold'>I'm a software engineer with a passion for building web applications.</p>
-                    </div>
-                </div>
+            <div className='hero-image w-full h-screen z-[-1] '></div>
+            <div className='absolute bottom-0 left-0 px-24 py-12'>
+                <h1 className='text-4xl font-bold'>I'm a <span className='gradient-1'>Software Engineer</span></h1>
+                <p className='text-lg text-gray-500'>I'm a software engineer with a passion for building web applications. I'm a quick learner and I'm always looking to improve my skills.</p>
+                {/* <div className='flex gap-4'>
+                    <button className='bg-black text-white px-4 py-2 rounded-md'>Download CV</button>
+                    <button className='bg-black text-white px-4 py-2 rounded-md'>Contact Me</button>
+                </div> */}
             </div>
-            <div className="min-h-[250px] md:h-[270px] w-full flex flex-col md:flex-row bg-white mt-4 md:mt-0 rounded-[60px] md:rounded-none ">
-                <div className="hidden md:block w-[60%] h-full bg-black ">
-                    <div className="w-full h-full bg-white rounded-br-[60px] p-8 flex flex-col gap-2 items-start justify-end">
-                        <h1 className='gradient-1 text-3xl font-bold '>Гэрэлсайхан</h1>
-                        <p className='text-black text-sm font-bold'>I'm a software engineer with a passion for building web applications.</p>
-                    </div>
-                </div>
-                <div className="w-full md:w-[40%] h-full bg-transparent md:bg-black rounded-[60px] md:rounded-tr-none md:rounded-bl-none md:rounded-br-none md:rounded-tl-[60px] ">
-                    <ul className=' text-black md:text-white text-2xl font-bold flex flex-col gap-4 items-start justify-center h-full w-full p-8'>
-                        <li className='cursor-pointer hover:text-gray-500'>Facebook</li>
-                        <li className='cursor-pointer hover:text-gray-500'>Instagram</li>
-                        <li className='cursor-pointer hover:text-gray-500'>github</li>
-                    </ul>
-                </div>
+            <div className='absolute bottom-0 right-0 px-24 py-12 z-55 bg-black text-white inline-flex gap-4 rounded-tl-[60px]'>
+                <ul className='flex flex-col gap-2'>
+                    <li>
+                        <a href="#" className='flex items-center gap-2'>
+                            <i className='fa-brands fa-linkedin text-white text-2xl'></i>
+                            <span className='text-white text-lg'>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className='flex items-center gap-2'>
+                            <i className='fa-brands fa-github text-white text-2xl'></i>
+                            <span className='text-white text-lg'>GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className='flex items-center gap-2'>
+                            <i className='fa-brands fa-twitter text-white text-2xl'></i>
+                            <span className='text-white text-lg'>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className='flex items-center gap-2'>
+                            <i className='fa-brands fa-facebook text-white text-2xl'></i>
+                            <span className='text-white text-lg'>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className='flex items-center gap-2'>
+                            <i className='fa-brands fa-whatsapp text-white text-2xl'></i>
+                            <span className='text-white text-lg'>WhatsApp</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     )
+
 }
 
 export default Hero
