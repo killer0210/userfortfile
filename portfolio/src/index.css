@@ -65,3 +65,9 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+
+.nav-center {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}

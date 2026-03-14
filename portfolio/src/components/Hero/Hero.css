@@ -8,6 +8,15 @@
     corner-shape: scoop;
 }
 
+.link-tag-right {
+    border-top-left-radius: 100px;
+    corner-shape: scoop;
+}
+
+.link-tag-left {
+    border-top-left-radius: 100px;
+    corner-shape: scoop;
+}
 
 .hero-image {
     background-image:
