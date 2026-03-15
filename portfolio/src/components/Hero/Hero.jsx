@@ -9,7 +9,7 @@ const Hero = () => {
                 <div className='tag-right xl:h-[70px] xl:w-[70px] h-[50px] w-[50px]  bg-black z-10 absolute bottom-[-50px] left-0 xl:bottom-[-70px] xl:left-0' />
                 <div className='tag-left xl:h-[70px] xl:w-[70px] h-[50px] w-[50px]  bg-black z-10 absolute top-0 right-[-50px] xl:top-0 xl:right-[-70px]' />
             </div>
-            <div className='hero-image w-full h-screen z-[-1] '></div>
+            <div className='hero-image w-full h-full z-[-1] '></div>
             <div className='absolute bottom-0 left-0 px-24 py-12'>
                 <h1 className='text-4xl font-bold'>I'm a <span className='gradient-1'>Software Engineer</span></h1>
                 <p className='text-lg text-gray-500'>I'm a software engineer with a passion for building web applications. I'm a quick learner and I'm always looking to improve my skills.</p>

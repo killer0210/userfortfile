@@ -20,6 +20,21 @@
     --color-dark-gray: #333333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.scrollbar-hide {
+    scrollbar-width: none;
+    overflow: scroll;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     /* Branding Colors */
     --branding-orange: #E85002;
@@ -70,4 +85,15 @@
     display: grid;
     place-items: center;
     height: 100%;
+}
+
+.nav-tooltip::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-right-color: theme('colors.black');
+
 }
