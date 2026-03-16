@@ -14,7 +14,7 @@ function App() {
         <section id='about' className='h-full snap-start snap-always w-full'>
           <About />
         </section>
-        <section id='skills' className='min-h-screen snap-start snap-always w-full flex items-center justify-center'>
+        <section id='skills' className='h-full snap-start snap-always w-full flex items-center justify-center'>
           <Skills />
         </section>
         <section id='projects' className='min-h-screen snap-start snap-always w-full flex items-center justify-center'>
