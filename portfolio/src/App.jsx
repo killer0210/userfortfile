@@ -2,6 +2,8 @@ import Hero from './components/Hero/Hero'
 import About from './pages/About/About'
 import Navbar from './components/Navbar/Navbar'
 import Skills from './pages/Skills/Skills'
+import Experience from './pages/Experience/Experience'
+import Projects from './pages/Projects/Projects'
 
 function App() {
   return (
@@ -17,11 +19,11 @@ function App() {
         <section id='skills' className='h-full snap-start snap-always w-full flex items-center justify-center'>
           <Skills />
         </section>
-        <section id='projects' className='min-h-screen snap-start snap-always w-full flex items-center justify-center'>
-          <div className='text-white text-xl font-semibold'>Projects</div>
+        <section id='projects' className='h-full snap-start snap-always w-full flex items-center justify-center'>
+          <Projects />
         </section>
-        <section id='experience' className='min-h-screen snap-start snap-always w-full flex items-center justify-center'>
-          <div className='text-white text-xl font-semibold'>Experience</div>
+        <section id='experience' className='h-full snap-start snap-always w-full flex items-center justify-center'>
+          <Experience />
         </section>
       </main>
     </div>
